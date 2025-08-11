@@ -175,10 +175,33 @@
         }
 
         @media print {
-            /* Print styles remain the same */
+            * {
+                text-shadow: none !important;
+                box-shadow: none !important;
+            }
+            body {
+                background: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            .resume-container {
+                width: 100% !important;
+                min-height: auto !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border-radius: 0 !important;
+            }
+            .competency-panel {
+                border: 1px solid #e0e0e0 !important;
+            }
         }
         @media (max-width: 768px) {
-            /* Responsive styles remain the same */
+            .h1-style {
+                font-size: 2.25rem; /* Reduced font size for mobile */
+            }
+            .resume-container {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>

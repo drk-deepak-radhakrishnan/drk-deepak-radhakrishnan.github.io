@@ -139,13 +139,13 @@
             padding: 1.5rem;
         }
 
-        /* Styles for the new Resume Match section */
+        /* Styles for the Highlights Section */
         .resume-match-section {
             background-color: #e6f0ff; /* Light blue background */
             border: 1px solid #b3d1ff; /* Blue border */
             border-radius: 0.75rem;
             padding: 1.5rem;
-            margin-bottom: 2rem;
+            height: 100%;
         }
         .resume-match-section h2 {
             color: #0053e2;
@@ -210,16 +210,42 @@
             </div>
         </header>
 
-        <!-- REVISED: Highlights Section -->
-        <section class="resume-match-section">
-            <h2><i class="fas fa-bullseye-pointer"></i>Highlights for the Sr. Director, Customer Obsession & Gen AI Role</h2>
-            <ul>
-                <li><i class="fas fa-star"></i><b>Large-Scale Distributed Platforms:</b> Architected and led the <b>$14B+</b> Walmart e-commerce platform (Cart, Checkout, Promotions) across 8+ countries, handling <b>100M+ requests/sec</b>. This proves my ability to build and evolve the complex, high-traffic systems central to Uber's customer experience.</li>
-                <li><i class="fas fa-star"></i><b>GenAI & Customer Obsession Alignment:</b> My experience in the customer care domain, optimizing issue resolution (e.g., late deliveries, wrong items), combined with building agentic frameworks for AI-driven workflows, directly aligns with Uber’s vision for GenAI in customer support.</li>
-                <li><i class="fas fa-star"></i><b>Platform Reinvention & Cost Optimization:</b> I led a multi-year platform rebuild from first principles, which resulted in a landmark <b>50% reduction</b> in infrastructure costs through vertical scaling and a forward-looking AI integration strategy.</li>
-                <li><i class="fas fa-star"></i><b>Global Leadership & Cross-Functional Partnership:</b> Successfully led a global team of <b>150+</b> engineers and partnered deeply with product, UX, and ops leaders across diverse markets (Mexico, Canada, Chile, etc.), demonstrating the ability to navigate multi-lingual and regulatory complexities.</li>
-            </ul>
-        </section>
+        <!-- Wrapper for Highlights and Alignment sections -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- REVISED: Highlights Section -->
+            <section class="resume-match-section">
+                <h2><i class="fas fa-bullseye-pointer"></i>Key Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-star"></i><b>Large-Scale Distributed Platforms:</b> Architected and led the <b>$14B+</b> Walmart e-commerce platform (Cart, Checkout, Promotions) across 8+ countries, handling <b>100M+ requests/sec</b>.</li>
+                    <li><i class="fas fa-star"></i><b>GenAI & Customer Obsession Alignment:</b> Experience in the customer care domain, optimizing issue resolution and building agentic frameworks for AI-driven workflows.</li>
+                    <li><i class="fas fa-star"></i><b>Platform Reinvention & Cost Optimization:</b> Led a multi-year platform rebuild from first principles, resulting in a landmark <b>50% reduction</b> in infrastructure costs.</li>
+                    <li><i class="fas fa-star"></i><b>Global Leadership:</b> Successfully led a global team of <b>150+</b> engineers and partnered deeply with product, UX, and ops leaders across diverse markets.</li>
+                </ul>
+            </section>
+
+            <!-- REVISED: Alignment Section -->
+            <section>
+                <h2 class="h2-style" style="border-bottom: none; margin-bottom: 1.25rem;"><i class="fas fa-link text-[#0053e2]"></i>A Proven Match for Uber's Leadership Needs</h2>
+                <div class="space-y-4">
+                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Platform Reinvention at Scale</h4>
+                        <p class="text-gray-700 leading-relaxed mt-1">Demonstrated experience in platform reinvention by leading Walmart's monolith-to-microservices migration for its $14B e-commerce platform. This first-principles approach to rebuilding core services is directly aligned with Uber's goal of evolving its customer obsession platform.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Direct Experience Applying AI to Customer Issues</h4>
+                        <p class="text-gray-700 leading-relaxed mt-1">Hands-on experience optimizing customer issue resolution (late deliveries, wrong items) and building agentic frameworks for AI-driven workflows at Walmart. This background is directly applicable to Uber's vision for a GenAI-powered customer obsession platform.</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Technical Leadership & Vision</h4>
+                        <p class="text-gray-700 leading-relaxed mt-1">A proven technical leader who drives architectural decisions, evidenced by spearheading a Rust-based GraphQL router to achieve a 50% cost reduction. This showcases the ability to challenge senior engineers and make impactful technology choices, a key requirement for the role.</p>
+                    </div>
+                     <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Proven Leader in Global Operations</h4>
+                        <p class="text-gray-700 leading-relaxed mt-1">Successfully managed e-commerce operations for diverse global markets (Mexico, Canada, China), demonstrating a deep understanding of the regulatory, linguistic, and logistical challenges inherent in a global business like Uber.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <section class="mb-8">
             <h2 class="h2-style"><i class="fas fa-lightbulb text-[#0053e2]"></i>Executive Summary</h2>

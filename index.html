@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Resume: Deepak Radhakrishnan - Senior Director</title>
+    <title>Executive Resume: Deepak Radhakrishnan - Technology Leader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -92,6 +92,7 @@
         ul.custom-bullets li {
             position: relative;
             padding-left: 1.5em;
+            margin-bottom: 0.5rem;
         }
         ul.custom-bullets li .fa-check-circle {
             position: absolute;
@@ -138,40 +139,11 @@
             background-color: #f9fafb;
             padding: 1.5rem;
         }
-
-        /* Styles for the Highlights Section */
-        .resume-match-section {
-            background-color: #e6f0ff; /* Light blue background */
-            border: 1px solid #b3d1ff; /* Blue border */
+        .summary-section {
+            background-color: #e6f0ff;
+            border: 1px solid #b3d1ff;
             border-radius: 0.75rem;
             padding: 1.5rem;
-            height: 100%;
-        }
-        .resume-match-section h2 {
-            color: #0053e2;
-            font-weight: 900;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .resume-match-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .resume-match-section li {
-            position: relative;
-            padding-left: 2em;
-            margin-bottom: 0.75rem;
-            font-weight: 300;
-            line-height: 1.4;
-        }
-        .resume-match-section li .fa-bolt {
-            position: absolute;
-            left: 0;
-            top: 0.35em;
-            color: #0053E2; /* Updated bolt color */
         }
 
         @media print {
@@ -191,7 +163,7 @@
                 padding: 0 !important;
                 border-radius: 0 !important;
             }
-            .competency-panel {
+            .competency-panel, .summary-section {
                 border: 1px solid #e0e0e0 !important;
             }
         }
@@ -233,45 +205,53 @@
             </div>
         </header>
 
-        <!-- Wrapper for Highlights and Alignment sections -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <!-- REVISED: Highlights Section -->
-            <section class="resume-match-section">
-                <h2><i class="fas fa-bullseye-pointer"></i>Key Highlights</h2>
-                <ul>
-                    <li><i class="fas fa-bolt"></i><b>Large-Scale Platform Leadership:</b> Directed the <b>$14B+</b> Walmart e-commerce platform, managing Cart, Checkout, Promotions, Amends, Subscriptions, and the Customer Fraud Engine across 8+ countries.</li>
-                    <li><i class="fas fa-bolt"></i><b>GenAI & Customer Obsession Alignment:</b> Experience in the customer care domain, optimizing issue resolution and building agentic frameworks for AI-driven workflows.</li>
-                    <li><i class="fas fa-bolt"></i><b>Platform Reinvention & Cost Optimization:</b> Led a multi-year platform rebuild from first principles, resulting in a landmark <b>50% reduction</b> in infrastructure costs.</li>
-                    <li><i class="fas fa-bolt"></i><b>Global Leadership:</b> Successfully led a global team of <b>150+</b> engineers and partnered deeply with product, UX, and ops leaders across diverse markets.</li>
-                    <li><i class="fas fa-bolt"></i><b>Technical Vision & Execution:</b> Spearheaded the architecture of a high-performance, Rust-based Federated GraphQL router, demonstrating the ability to drive cutting-edge technical decisions.</li>
-                    <li><i class="fas fa-bolt"></i><b>Cross-Functional Partnership:</b> Proven success in partnering with product, UX, and operations leaders to deliver complex, multi-market platform migrations and feature rollouts.</li>
-                    <li><i class="fas fa-bolt"></i><b>End-to-End Product Lifecycle Ownership:</b> Experience owning the full product lifecycle, from ideation and roadmap development to delivery and support for revenue-generating platforms.</li>
-                </ul>
-            </section>
-
-            <!-- REVISED: Alignment Section -->
-            <section>
-                <h2 class="h2-style" style="border-bottom: none; margin-bottom: 1.25rem;"><i class="fas fa-link text-[#0053e2]"></i>Strategic Alignment for Sr. Director, Customer Obsession & Gen AI</h2>
-                <div class="space-y-4">
-                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-                        <h4 class="font-semibold text-gray-800">Platform Reinvention at Scale</h4>
-                        <p class="text-gray-700 leading-relaxed mt-1">Demonstrated experience in platform reinvention by leading Walmart's monolith-to-microservices migration for its $14B e-commerce platform, supporting over 100M requests/sec. This first-principles approach is directly aligned with Uber's goal of evolving its customer obsession platform.</p>
-                    </div>
-                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-                        <h4 class="font-semibold text-gray-800">Customer-Obsessed AI Application</h4>
-                        <p class="text-gray-700 leading-relaxed mt-1">Proven ability to apply AI to enhance the customer journey, from leading the development of agentic frameworks to implementing personalization, dynamic relevancy tuning, and fraud prevention. This experience directly maps to the core responsibilities of the Customer Obsession & Gen AI role.</p>
-                    </div>
-                    <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-                        <h4 class="font-semibold text-gray-800">Global Leadership & Cross-Functional Influence</h4>
-                        <p class="text-gray-700 leading-relaxed mt-1">Led a global team of 150+ engineers and fostered deep partnerships with cross-functional teams including Fraud, Payments, OMS, and Operations to deliver seamless end-to-end commerce experiences across international markets.</p>
-                    </div>
-                     <div class="p-4 border border-gray-200 rounded-lg bg-gray-50">
-                        <h4 class="font-semibold text-gray-800">Operational Excellence & Cost Efficiency</h4>
-                        <p class="text-gray-700 leading-relaxed mt-1">Successfully managed platforms for 8+ international markets, navigating unique regulatory and localization needs while achieving a 50% reduction in infrastructure costs through strategic technical optimizations.</p>
-                    </div>
+        <section class="mb-8">
+            <h2 class="h2-style"><i class="fas fa-user-tie text-[#0053e2]"></i>Executive Summary</h2>
+            <div class="summary-section">
+                 <p class="text-gray-700 leading-relaxed">
+                    Results-driven technology executive with over 20 years of experience leading global engineering organizations, scaling high-traffic platforms, and driving business growth through technical innovation. Proven expertise in platform modernization, AI/ML strategy, and delivering complex, revenue-generating products from ideation to launch. Adept at building and mentoring high-performance teams of 150+ and fostering a culture of engineering and operational excellence.
+                </p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="h2-style"><i class="fas fa-chart-line text-[#0053e2]"></i>Key Impact & Metrics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center text-gray-700">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
+                    <i class="fas fa-dollar-sign text-4xl text-[#0053e2] mb-3"></i>
+                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">$14B+</p>
+                    <p class="text-sm font-light text-gray-600 mt-1">Platform Revenue Enabled</p>
                 </div>
-            </section>
-        </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
+                    <i class="fas fa-piggy-bank text-4xl text-[#0053e2] mb-3"></i>
+                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">50%</p>
+                    <p class="text-sm font-light text-gray-600 mt-1">Infrastructure Cost Reduction</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
+                    <i class="fas fa-users text-4xl text-[#0053e2] mb-3"></i>
+                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">150+</p>
+                    <p class="text-sm font-light text-gray-600 mt-1">Global Engineers Led</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
+                    <i class="fas fa-exchange-alt text-4xl text-[#0053e2] mb-3"></i>
+                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">100M+</p>
+                    <p class="text-sm font-light text-gray-600 mt-1">Requests Supported</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="h2-style"><i class="fas fa-bullseye-pointer text-[#0053e2]"></i>Key Highlights</h2>
+            <ul class="custom-bullets text-gray-700 leading-relaxed space-y-2">
+                <li><i class="fas fa-check-circle"></i><b>Large-Scale Platform Leadership:</b> Directed the <b>$14B+</b> Walmart e-commerce platform, managing Cart, Checkout, Promotions, Amends, Subscriptions, and the Customer Fraud Engine across 8+ countries.</li>
+                <li><i class="fas fa-check-circle"></i><b>AI-Driven Innovation:</b> Experience in e-commerce and customer care domains, optimizing user experience and building agentic frameworks for AI-driven workflows.</li>
+                <li><i class="fas fa-check-circle"></i><b>Platform Reinvention & Cost Optimization:</b> Led a multi-year platform rebuild from first principles, resulting in a landmark <b>50% reduction</b> in infrastructure costs.</li>
+                <li><i class="fas fa-check-circle"></i><b>Global Leadership:</b> Successfully led a global team of <b>150+</b> engineers and partnered deeply with product, UX, and ops leaders across diverse markets.</li>
+                <li><i class="fas fa-check-circle"></i><b>Technical Vision & Execution:</b> Spearheaded the architecture of a high-performance, Rust-based Federated GraphQL router, demonstrating the ability to drive cutting-edge technical decisions.</li>
+                <li><i class="fas fa-check-circle"></i><b>Cross-Functional Partnership:</b> Proven success in partnering with product, UX, and operations leaders to deliver complex, multi-market platform migrations and feature rollouts.</li>
+                <li><i class="fas fa-check-circle"></i><b>End-to-End Product Lifecycle Ownership:</b> Experience owning the full product lifecycle, from ideation and roadmap development to delivery and support for revenue-generating platforms.</li>
+            </ul>
+        </section>
 
         <section class="mb-8">
             <h2 class="h2-style"><i class="fas fa-bullseye text-[#0053e2]"></i>Core Competencies</h2>
@@ -313,32 +293,6 @@
             </div>
         </section>
         
-        <section class="mb-8">
-            <h2 class="h2-style"><i class="fas fa-chart-line text-[#0053e2]"></i>Key Impact & Metrics</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center text-gray-700">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
-                    <i class="fas fa-dollar-sign text-4xl text-[#0053e2] mb-3"></i>
-                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">$14B+</p>
-                    <p class="text-sm font-light text-gray-600 mt-1">Platform Revenue Enabled</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
-                    <i class="fas fa-piggy-bank text-4xl text-[#0053e2] mb-3"></i>
-                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">50%</p>
-                    <p class="text-sm font-light text-gray-600 mt-1">Infrastructure Cost Reduction</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
-                    <i class="fas fa-users text-4xl text-[#0053e2] mb-3"></i>
-                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">150+</p>
-                    <p class="text-sm font-light text-gray-600 mt-1">Global Engineers Led</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center">
-                    <i class="fas fa-exchange-alt text-4xl text-[#0053e2] mb-3"></i>
-                    <p class="text-4xl font-extrabold text-[#1a2333] leading-none">100M+</p>
-                    <p class="text-sm font-light text-gray-600 mt-1">Requests Supported</p>
-                </div>
-            </div>
-        </section>
-
         <div class="page-break"></div>
         
         <section class="mb-8">
@@ -366,10 +320,10 @@
 
                         <h4 class="h4-style mb-1 mt-6">Senior Manager</h4>
                         <div class="project-title">Walmart UK (ASDA) CMS Migration & Experience Enhancements</div>
-                           <ul class="custom-bullets text-gray-700 leading-relaxed">
-                               <li><i class="fas fa-check-circle"></i>Supported <b>$240M</b> revenue by leading the migration from Oracle ATG to Walmart’s in-house headless CMS (Tempo), enhancing content agility for a better customer experience.</li>
-                               <li><i class="fas fa-check-circle"></i>Delivered personalization, search, and Single Sign-on features, contributing to a <b>$780M</b> revenue impact by improving the customer's ability to discover and interact with products.</li>
-                           </ul>
+                            <ul class="custom-bullets text-gray-700 leading-relaxed">
+                                <li><i class="fas fa-check-circle"></i>Supported <b>$240M</b> revenue by leading the migration from Oracle ATG to Walmart’s in-house headless CMS (Tempo), enhancing content agility for a better customer experience.</li>
+                                <li><i class="fas fa-check-circle"></i>Delivered personalization, search, and Single Sign-on features, contributing to a <b>$780M</b> revenue impact by improving the customer's ability to discover and interact with products.</li>
+                            </ul>
                     </div>
                 </div>
 
@@ -388,7 +342,7 @@
                 <div>
                     <h3 class="h3-style">Symantec (NASDAQ: SYMC)</h3>
                     <p class="company-name mb-4 font-light">Bay Area, CA | Sep 2013 – Feb 2016</p>
-                       <div class="ml-4 pl-4 border-l-2 border-gray-200">
+                        <div class="ml-4 pl-4 border-l-2 border-gray-200">
                             <h4 class="h4-style mb-1">Manager, Software Development</h4>
                             <ul class="custom-bullets text-gray-700 leading-relaxed">
                                 <li><i class="fas fa-check-circle"></i>Delivered <b>four</b> major production releases of enterprise-grade secure email apps (iOS and Android), ensuring high reliability and performance for critical customer communications.</li>
@@ -400,7 +354,7 @@
                 <div>
                     <h3 class="h3-style">Infosys Technologies (NASDAQ: INFY)</h3>
                     <p class="company-name mb-4 font-light">India & USA | Jul 2003 – Jul 2013</p>
-                       <div class="ml-4 pl-4 border-l-2 border-gray-200 space-y-4">
+                        <div class="ml-4 pl-4 border-l-2 border-gray-200 space-y-4">
                             <div>
                                 <h4 class="h4-style mb-1">Principal & Staff Engineer</h4>
                                 <p class="text-gray-700">Built a high-scale chat widget for AT&T Games portal, supporting <b>100K+</b> concurrent gamers with real-time features, demonstrating experience in high-performance, real-time distributed systems that are foundational to modern customer support platforms.</p>
@@ -424,8 +378,8 @@
         <section>
             <h2 class="h2-style"><i class="fas fa-graduation-cap text-[#0053e2]"></i>Education</h2>
             <div>
-                   <h4 class="h4-style mb-1">B.E. Computer Science & Engineering</h4>
-                   <p class="text-gray-700 font-light">SSN College of Engineering, University of Madras</p>
+                    <h4 class="h4-style mb-1">B.E. Computer Science & Engineering</h4>
+                    <p class="text-gray-700 font-light">SSN College of Engineering, University of Madras</p>
             </div>
         </section>
     </div>
